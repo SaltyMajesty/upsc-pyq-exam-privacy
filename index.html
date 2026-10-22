@@ -51,6 +51,11 @@
         line-height: 1.4;
         margin: 36px 0 10px;
       }
+      h3 {
+        font-size: 16px;
+        line-height: 1.4;
+        margin: 22px 0 6px;
+      }
       .meta {
         color: var(--muted);
         font-size: 14px;
@@ -65,6 +70,9 @@
         margin: 0 0 8px;
       }
       .callout p {
+        margin: 0 0 10px;
+      }
+      .callout p:last-child {
         margin: 0;
       }
       ul {
@@ -75,6 +83,9 @@
       }
       a {
         color: var(--brand);
+      }
+      code {
+        font-size: 14px;
       }
       footer {
         margin-top: 48px;
@@ -90,79 +101,174 @@
       <h1>Privacy Policy</h1>
       <p class="meta">
         UPSC PYQ Mock Test &middot; <code>com.upscpyq.exampro</code><br />Last
-        updated: 21 October 2026
+        updated: 22 October 2026
       </p>
 
       <div class="callout">
         <p>
-          <strong>This app does not collect any data.</strong> It works entirely
-          offline. Nothing you do in the app is transmitted, stored on a server,
-          or shared with anyone.
+          <strong>We do not ask you for any personal information.</strong> There
+          is no account, no sign-in, and no name, email address or phone number
+          collected by us. Your exam answers stay on your own device.
+        </p>
+        <p>
+          The app does use an internet connection, and it includes advertising
+          and in-app purchases. Those services — all operated by Google or by
+          RevenueCat — receive some technical information about your device.
+          This page explains exactly what, and why.
         </p>
       </div>
 
-      <h2>Information we collect</h2>
+      <h2>What we collect ourselves</h2>
       <p>
-        <strong>None.</strong> UPSC PYQ Mock Test does not collect, store,
-        transmit, or process any personal or sensitive user data.
+        <strong>Nothing.</strong> We do not operate a server that stores
+        anything about you. We never collect your name, email address, phone
+        number, location, contacts, photos or any other file on your device,
+        and the app contains no analytics or crash-reporting library.
       </p>
-      <p>Specifically, the app does not collect:</p>
+
+      <h2>What stays on your device</h2>
+      <p>
+        The app saves a small amount of information in its own private storage
+        so it behaves sensibly between sessions:
+      </p>
       <ul>
         <li>
-          Names, email addresses, phone numbers, or any contact information
+          An unfinished paper — which questions you have answered, which you
+          flagged for review, where you had reached, and the remaining time on
+          a mock test — so you can resume it later
         </li>
-        <li>Location data</li>
-        <li>Device identifiers or advertising IDs</li>
-        <li>Photos, files, contacts, or any other content on your device</li>
-        <li>Usage analytics, crash reports, or diagnostic information</li>
+        <li>Your language choice, English or Hindi</li>
+        <li>Your light or dark theme preference</li>
+        <li>Whether you hold an ad-free pass, and when it expires</li>
       </ul>
-      <p>There is no account, no sign-in, and no registration of any kind.</p>
-
-      <h2>Internet access</h2>
       <p>
-        The app does not request the <code>INTERNET</code> permission and has no
-        network capability. It cannot send or receive data even in principle.
-        All question papers and answer keys are bundled inside the app and read
-        from local storage.
+        This never leaves your device and is not visible to us. Clearing the
+        app's data or uninstalling the app erases all of it.
       </p>
 
-      <h2>Permissions</h2>
+      <h2>Advertising</h2>
       <p>
-        The app requests no Android runtime permissions. It does not access your
-        camera, microphone, location, storage, contacts, or any other protected
-        feature of your device.
+        A short rewarded advert can play before a paper begins. Adverts are
+        served by <strong>Google AdMob</strong>, which is a separate company
+        from us and handles the advert itself.
+      </p>
+      <p>
+        To do that, AdMob receives technical information from your device,
+        including your
+        <strong>Android advertising ID</strong>, IP address, device model and
+        operating system version, and whether you viewed or interacted with an
+        advert. It may use this to limit repeated adverts, to measure them, and
+        — where you have allowed it — to personalise them.
+      </p>
+      <p>
+        Where the law requires consent, the app shows Google's consent form the
+        first time you open it, and your choice is respected. You can change
+        that choice at any time from
+        <strong>Ad privacy choices</strong> on the app's home screen. Taking an
+        ad-free pass stops adverts loading at all.
+      </p>
+      <p>
+        How Google handles this data is described in the
+        <a href="https://policies.google.com/technologies/partner-sites"
+          >Google Privacy &amp; Terms</a
+        >
+        and in Google's
+        <a href="https://support.google.com/admob/answer/6128543"
+          >AdMob documentation</a
+        >.
       </p>
 
-      <h2>Your exam attempts</h2>
+      <h2>The ad-free pass</h2>
       <p>
-        Answers you select during a paper are held in the device's memory only
-        while that paper is open, so the app can score it. They are not written
-        to disk and are discarded when you leave the paper or close the app. The
-        app keeps no history of past attempts.
+        The optional ad-free pass is sold through
+        <strong>Google Play Billing</strong> and managed with
+        <strong>RevenueCat</strong>, which keeps track of whether your pass is
+        still valid.
+      </p>
+      <p>
+        Payment is handled entirely by Google Play. We never see or receive your
+        card details. RevenueCat receives the purchase receipt, an anonymous
+        identifier the app generates for your install, and basic device and
+        country information, so that your purchase can be recognised and
+        restored. It is not linked to a name or an email address, because the
+        app never asks for one.
+      </p>
+      <p>
+        See the
+        <a href="https://www.revenuecat.com/privacy/">RevenueCat privacy policy</a>
+        and the
+        <a href="https://policies.google.com/privacy">Google privacy policy</a>.
       </p>
 
-      <h2>Third-party services</h2>
+      <h2>App settings</h2>
       <p>
-        The app contains no third-party analytics, advertising, crash reporting,
-        or tracking libraries of any kind. No data is shared with third parties,
-        because no data is collected.
+        The question papers are stored inside the app in encrypted form, and the
+        app fetches the setting needed to open them from
+        <strong>Firebase Remote Config</strong>, a Google service. This is also
+        how we correct a setting without releasing a new version.
       </p>
+      <p>
+        Making that request sends Google a Firebase installation identifier
+        along with your IP address and basic app and device information. It does
+        not contain anything about your answers or your results. Because the app
+        needs this to open a paper, a connection is required.
+      </p>
+
+      <h2>Internet and permissions</h2>
+      <p>
+        The app requests no runtime permissions — it never asks for your camera,
+        microphone, location, storage or contacts. The permissions it declares
+        are the ones the advertising, billing and configuration services need in
+        order to work:
+      </p>
+      <ul>
+        <li><code>INTERNET</code> and <code>ACCESS_NETWORK_STATE</code></li>
+        <li>
+          <code>AD_ID</code> and the Android AdServices permissions, used by
+          AdMob
+        </li>
+        <li>
+          <code>FOREGROUND_SERVICE</code> and <code>WAKE_LOCK</code>, used while
+          an advert is playing
+        </li>
+      </ul>
 
       <h2>Children's privacy</h2>
       <p>
-        The app is intended for candidates preparing for the Union Public
-        Service Commission Civil Services Examination and is not directed at
-        children. Since the app collects no data from any user, it collects no
-        data from children.
+        The app is made for candidates preparing for the Civil Services
+        Examination and is not directed at children. We do not knowingly collect
+        anything from a child. If you believe a child has used the app and you
+        want its locally stored data removed, clearing the app's data or
+        uninstalling it removes everything.
+      </p>
+
+      <h2>Your choices</h2>
+      <ul>
+        <li>
+          <strong>Adverts:</strong> change your consent from
+          <em>Ad privacy choices</em> in the app, or remove adverts entirely
+          with an ad-free pass
+        </li>
+        <li>
+          <strong>Advertising ID:</strong> reset or delete it in Android
+          <em>Settings &rsaquo; Privacy &rsaquo; Ads</em>
+        </li>
+        <li>
+          <strong>Everything stored locally:</strong> clear the app's data or
+          uninstall the app
+        </li>
+      </ul>
+      <p>
+        Because we hold no data about you on any server of ours, there is
+        nothing for us to delete on request. For data held by Google or
+        RevenueCat, follow the links above.
       </p>
 
       <h2>Changes to this policy</h2>
       <p>
-        If the app ever begins collecting data — for example, if optional crash
-        reporting is added in a future version — this policy will be updated
-        before that version is released, and the "Last updated" date above will
-        change. Continued use of the app after such an update constitutes
-        acceptance of the revised policy.
+        If the app begins using data in a way this page does not describe, this
+        policy will be updated before that version is released, and the "Last
+        updated" date above will change.
       </p>
 
       <h2>Contact</h2>
@@ -177,8 +283,8 @@
         <p>
           UPSC PYQ Mock Test is an independent study app. It is not affiliated
           with, authorised by, or endorsed by the Union Public Service
-          Commission or the Government of India. Question papers are reproduced
-          for study purposes.
+          Commission or the Government of India. Question papers are public
+          documents, reproduced for study purposes.
         </p>
       </footer>
     </main>
